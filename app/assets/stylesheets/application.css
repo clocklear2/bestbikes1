@@ -1,15 +1,120 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body{
+	background-color:#C0392B;
+}
+
+ /*Navbar*/
+ .navbar{
+ 	background-color:white;
+ }
+/*Navbar ends*/
+
+ /*Jumbotron*/
+.jumbotron{
+	color:black;
+	font-size:6em;
+	text-align:center;
+	font-family:Georgia, Times, "Times New Roman", serif;
+	background-color:white;
+}
+
+.homepic{
+  text-align:center;
+  padding right:15px;
+}
+/*Jumbotron ends*/
+
+/*about page*/
+.main h1{
+ text-align:center;
+ color:white;
+ font-family:Georgia, Times, "Times New Roman", serif;
+}
+
+.col-md-12 p{
+ font-family:Georgia, Times, "Times New Roman", serif;
+ font-size:1.4em;
+ color:black;
+}
+
+.col-md-12 h2{
+ font-family:Georgia, Times, "Times New Roman", serif;
+ font-size:1.6em;
+ color:white;
+}
+/*about page ends*/
+
+/*contact page*/
+.col-md-6 h1,h2{
+ font-family:Georgia, Times, "Times New Roman", serif;
+ font-size:2.0em;
+ color:white;
+}
+
+
+.paragraph{
+ font-family:Georgia, Times, "Times New Roman", serif;
+ font-size:1.5em;
+ color:black;
+}
+
+.form-group label{
+ font-family:Georgia, Times, "Times New Roman", serif;
+ font-size:1.0em;
+ color:white;
+}
+
+/*contact page ends*/
+
+/*inventory*/
+.head h1{
+ text-align:center;
+ color:white;
+ font-family:Georgia, Times, "Times New Roman", serif;
+}
+/*inventory ends*/
+
+/*order page*/
+.form-horizontal h1,p{
+ font-family:Georgia, Times, "Times New Roman", serif;
+ font-size:2.0em;
+ color:white;
+ padding-left:50px;
+}
+
+.control-group{
+ padding-left:50px;
+}
+
+.form-actions{
+  padding-left:50px;
+}
+/*order ends*/
+
+/*footer*/
+#footer{
+  clear:both;
+  color:black;
+  font-size:90%;
+}
+
+#footer ul{
+  list-style-type:none;
+  text-align:left;
+  padding-top:100px;
+}
+
+#footer ul li{
+  display:inline;
+}
+
+#footer ul li a{
+  text-decoration:none;
+  font-family:arial;
+  color:black;
+}
+
+#footer ul li a:hover{
+  color:blue;
+  background-color:#fff;
+}
+/*footer ends*/
