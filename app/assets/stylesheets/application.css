@@ -6,6 +6,7 @@ body{
  .navbar{
   background-color:white;
  }
+
 /*Navbar ends*/
 
  /*Jumbotron*/
@@ -63,20 +64,39 @@ body{
  color:white;
 }
 
+#contact span{
+  font-style:Georgia, Times, "Times New Roman", serif; 
+  font-size:1.2em;
+  color:white;
+}
+
 /*contact page ends*/
 
 /*inventory*/
-.head h1{
- text-align:center;
- color:white;
- font-family:Georgia, Times, "Times New Roman", serif;
+.col-sm-2 h2{
+  color:white;
+  font-family:Georgia, Times, "Times New Roman", serif;
+  font-size:1.2em;
+  text-align:center;
+}
+
+.container a{
+  color:white;
+  padding-left:30px;
+  font-style:Georgia, Times, "Times New Roman", serif;
+  font-weight:bold;
+}
+
+.col-sm-2 h3{
+  color:white;
+  text-align:center;
 }
 /*inventory ends*/
 
 /*order page*/
 .form-horizontal h1,p{
  font-family:Georgia, Times, "Times New Roman", serif;
- font-size:2.0em;
+ font-size:1.5em;
  color:white;
  padding-left:50px;
 }
@@ -92,29 +112,6 @@ body{
 
 /*footer*/
 #footer{
-  clear:both;
-  color:black;
-  font-size:90%;
-}
-
-#footer ul{
-  list-style-type:none;
-  text-align:left;
-  padding-top:100px;
-}
-
-#footer ul li{
-  display:inline;
-}
-
-#footer ul li a{
-  text-decoration:none;
-  font-family:arial;
-  color:black;
-}
-
-#footer ul li a:hover{
-  color:blue;
-  background-color:#fff;
+  text-align:center;
 }
 /*footer ends*/

@@ -1,0 +1,104 @@
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <form class="form-horizontal span6">
+        <fieldset>
+          <h1>Payment</h1>
+       
+          <div class="control-group">
+            <label class="control-label">Card Holder's Name</label>
+            <div class="controls">
+              <input type="text" class="input-block-level" pattern="\w+ \w+.*" title="Fill your first and last name" required>
+            </div>
+          </div>
+       
+          <div class="control-group">
+            <label class="control-label">Card Number</label>
+            <div class="controls">
+              <div class="row-fluid">
+                <div class="span3">
+                  <input type="text" class="input-block-level" autocomplete="off" maxlength="4" pattern="\d{4}" title="First four digits" required>
+                </div>
+                <div class="span3">
+                  <input type="text" class="input-block-level" autocomplete="off" maxlength="4" pattern="\d{4}" title="Second four digits" required>
+                </div>
+                <div class="span3">
+                  <input type="text" class="input-block-level" autocomplete="off" maxlength="4" pattern="\d{4}" title="Third four digits" required>
+                </div>
+                <div class="span3">
+                  <input type="text" class="input-block-level" autocomplete="off" maxlength="4" pattern="\d{4}" title="Fourth four digits" required>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+          <div class="control-group">
+            <label class="control-label">Card Expiry Date</label>
+            <div class="controls">
+              <div class="row-fluid">
+                <div class="span9">
+                  <select class="input-block-level">
+                    <option>January</option>
+                    <option>Febuary</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                  </select>
+                </div>
+                <div class="span3">
+                <p id="visible-comment"></p>
+                  <select class="input-block-level">
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                  </select>
+
+                  <p id="visible-comment"></p>
+                  <label class="control-label">Choose Item</label>
+                  <select class="input-block-level">
+                    <option>99.99 M/B</option>
+                    <option>89.00 M/B</option>
+                    <option>150.00 BMX</option>
+                    <option>79.99 M/B</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+          <div class="control-group">
+            <label class="control-label">Card CVV</label>
+            <div class="controls">
+              <div class="row-fluid">
+                <div class="span3">
+                  <input type="text" class="input-block-level" autocomplete="off" maxlength="3" pattern="\d{3}" title="Three digits at back of your card" required>
+                </div>
+                <div class="span8">
+                  <!-- screenshot may be here -->
+                </div>
+              </div>
+            </div>
+          </div>
+       
+          <div class="form-actions">
+          <p id="visible-comment"></p>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn">Cancel</button>
+          </div>
+        </fieldset>
+        <p id="visible-comment"></p>
+        <p id="visible-comment"></p>
+        <p>Your new item will arrive 5-10 business days. Thank you for your purchase and come again.</p>
+      </form>
+    </div>
+  </div>
+</div>
