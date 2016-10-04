@@ -1,6 +1,6 @@
 body{
   background-color:white;
-  font-family:Georgia, Times, "Times New Roman", serif;
+  /*font-family:Georgia, Times, "Times New Roman", serif;*/
 }
 
  /*Navbar*/
@@ -61,20 +61,6 @@ body{
 /*contact page ends*/
 
 /*product*/
-.col-md-4 h1{
-  font-size:1.3em;
-
-}
-.col-md-4 h2{
-  font-size:1.5em;
-}
-
-.col-md-4 h3{
-  font-size:1.3em;
-  margin-right:20px;
-
-}
-
 /*product ends*/
 
 /*order page*/
