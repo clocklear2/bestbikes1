@@ -1,5 +1,6 @@
 body{
-  background-color:#C0392B;
+  background-color:white;
+  font-family:Georgia, Times, "Times New Roman", serif;
 }
 
  /*Navbar*/
@@ -14,7 +15,6 @@ body{
   color:black;
   font-size:6em;
   text-align:center;
-  font-family:Georgia, Times, "Times New Roman", serif;
   background-color:white;
 }
 
@@ -27,77 +27,59 @@ body{
 /*about page*/
 .main h1{
  text-align:center;
- color:white;
- font-family:Georgia, Times, "Times New Roman", serif;
+ color:black;
 }
 
 .col-md-12 p{
- font-family:Georgia, Times, "Times New Roman", serif;
  font-size:1.4em;
  color:black;
 }
 
 .col-md-12 h2{
- font-family:Georgia, Times, "Times New Roman", serif;
- font-size:1.6em;
- color:white;
 }
 /*about page ends*/
 
 /*contact page*/
 .col-md-6 h1,h2{
- font-family:Georgia, Times, "Times New Roman", serif;
  font-size:2.0em;
- color:white;
 }
 
 
 .paragraph{
- font-family:Georgia, Times, "Times New Roman", serif;
  font-size:1.5em;
  color:black;
 }
 
 .form-group label{
- font-family:Georgia, Times, "Times New Roman", serif;
  font-size:1.0em;
- color:white;
 }
 
 #contact span{
-  font-style:Georgia, Times, "Times New Roman", serif; 
   font-size:1.2em;
-  color:white;
 }
 
 /*contact page ends*/
 
-/*inventory*/
-.col-sm-2 h2{
-  color:white;
-  font-family:Georgia, Times, "Times New Roman", serif;
-  font-size:1.2em;
-  text-align:center;
+/*product*/
+.col-md-4 h1{
+  font-size:1.3em;
+
+}
+.col-md-4 h2{
+  font-size:1.5em;
 }
 
-.container a{
-  color:white;
-  padding-left:30px;
-  font-style:Georgia, Times, "Times New Roman", serif;
-  font-weight:bold;
+.col-md-4 h3{
+  font-size:1.3em;
+  margin-right:20px;
+
 }
 
-.col-sm-2 h3{
-  color:white;
-  text-align:center;
-}
-/*inventory ends*/
+/*product ends*/
 
 /*order page*/
 .form-horizontal h1,p{
- font-family:Georgia, Times, "Times New Roman", serif;
  font-size:1.5em;
- color:white;
  padding-left:50px;
 }
 
@@ -113,5 +95,6 @@ body{
 /*footer*/
 #footer{
   text-align:center;
+  margin-top:50px;
 }
 /*footer ends*/

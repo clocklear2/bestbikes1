@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'static_pages/order'
 
-  get 'static_pages/inventory'
+  get'products' => 'products#index'
 
   resources :products
   get 'static_pages/about'
