@@ -63,24 +63,11 @@ body{
 /*product*/
 /*product ends*/
 
-/*order page*/
-.form-horizontal h1,p{
- font-size:1.5em;
- padding-left:50px;
-}
-
-.control-group{
- padding-left:50px;
-}
-
-.form-actions{
-  padding-left:50px;
-}
-/*order ends*/
-
-/*footer*/
-#footer{
+/*order*/
+.col-md-12{
   text-align:center;
-  margin-top:50px;
 }
-/*footer ends*/
+.col-md-12 {
+
+}
+/*order page ends*/
