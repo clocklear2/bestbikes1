@@ -1,1 +1,1 @@
-Tay tay is cool as Hell
+My goal is to be the best web dev around
