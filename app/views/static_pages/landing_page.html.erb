@@ -8,21 +8,17 @@
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="..." alt="...">
+    <% @products.each do |product| %>
+    <div class="item<%= " active" if product == @products.first %>">
+      <%= image_tag(product.image_url) %><br>
       <div class="carousel-caption">
-        ...
+        <h1><%= product.name %><br></h1>
+        <h2><%= product.description %></h2><br>
+        <h2><%=link_to 'Show', product %></h2>
       </div>
-    </div>
-    <div class="item">
-      <img src="..." alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
-    </div>
-    ...
+        </div>
+    <% end %>
   </div>
-
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -33,6 +29,6 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-		<h2>The world’s best bikes come only from the world’s best bicycle company. Every bike is built to enhance the quality of your ride, and every model is backed by our history of performance, durability, and precision engineering. Find your next great ride here from our comprehensive offering of trail-shredding mountain bikes, lightning-quick road bikes, and stylish city bikes.</h2>
+		
 	
 	
