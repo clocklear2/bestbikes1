@@ -11,9 +11,10 @@
  			<%= product.price %><br>
  			<%=link_to 'Show', product %>
  			<%=link_to 'Edit', edit_product_path(product) %>
- 			<%=link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-             <h2>Create New Product here <%= link_to 'New Product', new_product_path %></h2></div>
+ 			<%=link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+             
 			<%end%>
+			<h2>Create New Product here <%= link_to 'New Product', new_product_path %></h2>
 </div>
 
 
