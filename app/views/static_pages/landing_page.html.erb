@@ -11,9 +11,9 @@
     <% @products.each do |product| %>
     <div class="item<%= " active" if product == @products.first %>">
       <center><h1> <%= product.name %> </h1></center>
-      <center> <%= image_tag(product.image_url) %> </center>
-      <div class="carousel-caption"> <br><br>
-        <%= product.description %>
+      <center> <%= image_tag(product.image_url) %> </center><br>
+      <div class="carousel-caption">
+              <%= product.description %>
       </div>
         </div>
     <% end %>
@@ -29,7 +29,7 @@
   </a>
 </div>
 
-<center><h2>The world’s best bikes come only from the world’s best bicycle company. Every bike is built to enhance the quality of your ride, and every model is backed by our history of performance, durability, and precision engineering. Find your next great ride here from our comprehensive offering of trail-shredding mountain bikes, lightning-quick road bikes, and stylish city bikes.</h2></center>
+<center><h3>The world’s best bikes come only from the world’s best bicycle company. Every bike is built to enhance the quality of your ride, and every model is backed by our history of performance, durability, and customer service. </h3></center>
 		
 	
 	
