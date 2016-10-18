@@ -5,15 +5,18 @@
 		<% @products.each do |product| %>
 		<div class="col-sm-12 col-md-4">
  			<h2><%= product.name %> </h2><br>
-  			<h3><%= product.description %></h3>
+  			<p><%= product.description %></p>
             <%= image_tag(product.image_url)%><br>
- 			<%= product.color %><br>
- 			<%= product.price %><br>
+ 			<%= product.color %> <br>
+ 			<%= product.price %> <br>
  			<%=link_to 'Show', product %>
  			<%=link_to 'Edit', edit_product_path(product) %>
- 			<%=link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+ 			<%=link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+			</div>
              
 			<%end%>
+
+			
 			<h2>Create New Product here <%= link_to 'New Product', new_product_path %></h2>
 </div>
 
