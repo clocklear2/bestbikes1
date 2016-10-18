@@ -1,6 +1,6 @@
 body{
-  background-color:lightgrey;
-  /*font-family:Georgia, Times, "Times New Roman", serif;*/
+  background-color:white;
+  font-family:Georgia, Times, "Times New Roman", serif;
 }
 
  /*Navbar*/
@@ -22,6 +22,14 @@ body{
   text-align:center;
   padding-right:15px;
 }
+
+/*Featured page*/
+.carousel-caption h2{
+  color:black;
+}
+
+/*Featured page ends*/
+
 /*Jumbotron ends*/
 
 /*about page*/
