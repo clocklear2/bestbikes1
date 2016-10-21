@@ -16,15 +16,7 @@ class ProductsController < ApplicationController
     end
   end
 
-  def thank_you
-  @name = params[:name]
-  @email = params[:email]
-  @message = params[:message]
-  ActionMailer::Base.mail(:from => @email,
-      :to => 'codylocklear82@gmail.com',
-      :subject => "A new contact form message from #{@name}",
-      :body => @message).deliver_now
-end
+
 
   # GET /products/1
   # GET /products/1.json
