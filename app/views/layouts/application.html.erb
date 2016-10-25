@@ -30,18 +30,32 @@
         <li><%= link_to "About", static_pages_about_path(@product) %><span class="sr-only">(current)</span></a></li>
         <li><%= link_to "Contact", static_pages_contact_path(@product) %></li>
        <li><%= link_to "Products",products_path(@product) %></li>
+       <%= form_tag("/products", method: "get", class: "navbar-form navbar-left", role: "search") do %>
+            <%= label_tag(:q, "") %>
+            <%= text_field_tag(:q, "", class: "form-control") %>
+            <%= submit_tag("Search", class: 'btn btn-default') %>
       
       </ul>
-          <%= form_tag("/products", method: "get", class: "navbar-form navbar-right", role: "search") do %>
-            <%= label_tag(:q, "Search for:") %>
-            <%= text_field_tag(:q, "", class: "form-control") %>
-            <p id="visible-comment"></p>
-            <%= submit_tag("Search", class: 'btn btn-default') %>
+
+       <ul class="nav pull-right">
+          <li>
+            <% if user_signed_in? %>
+              <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+        <% else %>
+              <%= link_to('Login', new_user_session_path) %>
+        <% end %>
+      </li>
+    </ul>
+
+        
   <% end %>
   </div>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
 
   <%= yield %>
 

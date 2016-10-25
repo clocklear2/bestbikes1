@@ -1,21 +1,30 @@
-<h1>Products</h1>
+
 <div class="container">
-	<div class="row"> 
+	<div class="row" id="product"> 
+		<h1>Products</h1></div>
+		
 		<% @products.each do |product| %>
-		<div class="col-sm-12 col-md-4">
- 			<h2><%= product.name %> </h2><br>
+		<div class="col-xs-12 col-md-4" id="title">
+		
+ 			<h2><%= product.name %> </h2>
   			<p><%= product.description %></p>
-            <%= image_tag(product.image_url, class: "img-responsive") %><br>
+            <%= image_tag(product.image_url, class: "img-responsive") %>
  			<%= product.color %> <br>
  			<%= product.price %> <br>
  			<%=link_to 'Show', product %>
  			<%=link_to 'Edit', edit_product_path(product) %>
  			<%=link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
 			</div>
-
+			
 		<%end%>
-<div class="col-sm-12 col-md-12">
-<h3>Create New Product here <%= link_to 'New Product', new_product_path %></h3></div>
-	</div>
+		</div>
+		<div id="new"> 
+		<h2><%= link_to 'New Product', new_product_path %> click here</h2>
+		</div>
+			 
+		
+		
+		
+
 
 
