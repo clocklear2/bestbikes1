@@ -1,9 +1,7 @@
 body{
   background-color:lightgrey;
   font-family:Georgia, Times, "Times New Roman", serif;
-  padding-top:40px;
-  padding-bottom:40px;
-  background-color:#eee;
+  font-size: 12px;
 }
 
  /*Navbar*/
@@ -11,16 +9,19 @@ body{
   background-color:white;
  }
 
+ .navbar-brand {
+  color:black;
+ }
+
  
 
 /*Navbar ends*/
 
  /*Jumbotron*/
-.jumbotron{
+.jumbotron h1{
   color:black;
-  font-size:6em;
+  font-size:3em;
   text-align:center;
-  background-color:white;
 }
 
 .homepic{
@@ -83,13 +84,10 @@ body{
 #title h2{
   font-size:1.3em;
 }
-
 #new h2{
-  font-size:1.3em;
+  font-size:1.2em;
   padding-left:80px;
 }
-
-
 /*product ends*/
 
 /*order*/

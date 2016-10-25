@@ -14,3 +14,27 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+<!-- Can place script tags with JavaScript files here -->
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src=“js/scripts.js”></script>
+
+  $(document).ready(function(){
+  // Smooth scrolling
+  var $root = $('html, body');
+  $('.navbar-nav a').click(function() {
+      var href = $.attr(this, 'href');
+      $root.animate({
+          scrollTop: $(href).offset().top
+      }, 500, function () {
+          window.location.hash = href;
+      });
+      return false;
+  });
+
+  // Stellar
+  $.stellar();
+
+  // Tooltips
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
