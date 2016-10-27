@@ -1,4 +1,4 @@
-<div class="container card small-container">
+<div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
       <h3>Sign up</h3>
@@ -15,7 +15,7 @@
           <%= f.label :password %>
           <% if @minimum_password_length %>
           <em>(<%= @minimum_password_length %> characters minimum)</em>
-          <% end %><br />
+          <% end %>
           <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
         </div>
 
