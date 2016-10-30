@@ -1,23 +1,27 @@
+<center> <h2>Featured Product:</h2> </center>
+
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <% counter = 1 %>
+    <% @products.each do |product| %>
+      <li data-target="#carousel-example-generic" data-slide-to="<%= counter %>"></li>
+      <% counter += 1 %>
+    <% end %>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <% @products.each do |product| %>
-    <div class="item<%= 'active' if product == @products.first %>">
-      <center><h1> <%= product.name %> </h1></center>
-     <center> <%= image_tag(product.image_url) %> </center><br>
+    <div class="item<%= " active" if product == @products.first %>">
+      <center> <%= image_tag(product.image_url, class: "img-responsive") %> </center>
       <div class="carousel-caption">
-              <center><%= product.description %></center>
+        <%= product.name %>
       </div>
-        </div>
+    </div>
     <% end %>
   </div>
+
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -28,10 +32,3 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-<center><h3>The world’s best bikes come only from the world’s best bicycle company. Every bike is built to enhance the quality of your ride, and every model is backed by our history of performance, durability, and customer service. </h3></center>
-
-
-		
-	
-	
