@@ -36,24 +36,47 @@
            <%= submit_tag("Search", class: 'btn btn-default') %>
      
      </ul>
+     <% end %>
 
-      <ul class="nav pull-right">
-         <li>
-           <% if user_signed_in? %>
-             <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-       <% else %>
-             <%= link_to('Login', new_user_session_path) %>
-       <% end %>
-     </li>
-   </ul>
- <% end %>
+      <!-- Devise Actions -->
+            <ul class="nav nav-pills pull-right" id="navbtn">
+            <li>
+            <% if user_signed_in? %>
+              <%= button_to('Logout', destroy_user_session_path, :method => :delete, class: "btn btn-sm btn-default") %>
+            <% else %>
+            <li> <%= button_to('Sign up', new_user_registration_path, :method => :get, class: "btn btn-sm btn-default") %></li>
+
+            <li> <%= button_to('Login', new_user_session_path, class: "btn btn-sm btn-primary") %></li>
+            <% end %>
+            </li>
+            </ul>
+
+ 
  </div>
    </div><!-- /.navbar-collapse -->
  </div><!-- /.container-fluid -->
 </nav>
 
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+       <!-- Add Alerts -->
+  <%if notice %>
+  <div class="alert alert-info alert-dismissible fade in" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <%= notice %>
+  </div>
+  <% end %>
+
+  <%if alert %>
+  <div class="alert alert-danger alert-dismissible fade in" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <%= alert %>
+  </div>
+  <% end %>
+
+  <!-- add alerts ends -->
 
   <%= yield %>
 
@@ -61,7 +84,8 @@
    © 2016 bests|Bikes Cody Locklear<br>
    <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></li>
    </footer>
-      
+
+   
 
 </body>
 </html>
