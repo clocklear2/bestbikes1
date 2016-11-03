@@ -1,0 +1,152 @@
+body{
+  background-color:lightgrey;
+  font-family:Georgia, Times, "Times New Roman", serif;
+  font-size: 12px;
+}
+
+img{
+  max-width: 100%;
+}
+
+ /*Navbar*/
+ .navbar{
+  background-color:white;
+ }
+
+ .navbar-brand {
+  color:black;
+ }
+
+ #navbtn{
+  margin: 8px 10px 0 1px;
+}
+
+ 
+
+/*Navbar ends*/
+
+ /*Jumbotron*/
+.jumbotron h1{
+  color:black;
+  font-size:3em;
+  text-align:center;
+}
+
+.homepic{
+  text-align:center;
+  padding-right:15px;
+}
+
+/*Featured page*/
+.carousel-caption {
+  color:black;
+}
+
+/*Featured page ends*/
+
+
+
+/*about page*/
+.main h1{
+ text-align:center;
+ color:black;
+}
+
+.col-md-12 p{
+ font-size:1.4em;
+ color:black;
+}
+
+.col-md-12 h2{
+}
+/*about page ends*/
+
+/*contact page*/
+.col-md-6 h1,h2{
+  height: 2em;
+ font-size:2.0em;
+}
+
+
+.paragraph{
+ font-size:1.5em;
+ color:black;
+}
+
+.form-group label{
+ font-size:1.0em;
+}
+
+#contact span{
+  font-size:1.2em;
+}
+
+/*contact page ends*/
+
+/*product*/
+#product h1{
+  font-size:1.8em;
+  padding-left:30px;
+}
+
+#title h2{
+  font-size:1.3em;
+}
+#new h2{
+  font-size:1.2em;
+  padding-left:80px;
+}
+/*product ends*/
+
+/*order*/
+.col-md-12{
+  text-align:center;
+}
+
+/*order page ends*/
+
+
+/*sign in page starts*/
+
+.form-group{
+  max-width:350px;
+  padding:5px;
+  padding-bottom:20px;
+  margin:0 auto;
+}
+
+.form-group .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding:8px;
+  padding-bottom:20px;
+  font-size:16px;
+}
+.form-group .form-control:focus {
+  z-index:1;
+}
+
+.form-group input[type="email"] {
+  margin-bottom:-1px;
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+}
+.form-group input[type="password"] {
+  margin-bottom:10px;
+  border-top-left-radius:0;
+  border-top-right-radius:0;
+}
+
+/*sign in pages ends*/
+
+#footer {
+    background-color: #f4f4f4;
+    padding: 2em 0em;
+    margin-top:2em;
+    position:relative;
+    width:100%;
+    text-align:center;
+}
